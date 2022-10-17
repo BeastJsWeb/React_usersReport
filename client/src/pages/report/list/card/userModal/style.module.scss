@@ -1,0 +1,53 @@
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6em;
+  gap: 3em;
+  margin: auto;
+
+  >:nth-child(1) {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+
+  .body {
+    display: flex;
+    gap: 6.5em;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      justify-content: space-between;
+    }
+
+    >:nth-child(2) {
+      opacity: 0.7;
+      font-size: 0.9em;
+
+      >:nth-child(1) {
+        font-size: large;
+      }
+
+      li {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 21em;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding-bottom: 1em;
+
+    >:nth-child(2) {
+      opacity: 0.7;
+      font-size: 0.9em;
+      
+    }
+  }
+}

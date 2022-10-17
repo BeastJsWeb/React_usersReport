@@ -1,0 +1,44 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(159, 163, 185, 0.5);
+  cursor: default;
+
+  .modal_content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: min-content;
+    background-color: white;
+    border-radius: 1.5em;
+    margin-top: 8em;
+    padding-top: 1.5em;
+    transition: all 0.3s;
+    
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -1.5em;
+      border-radius: 50%;
+      width: 3.1em;
+      height: 3.1em;
+      background-color: #B44CCF;
+
+      &:hover {
+        background-color:#a735c4;
+      }
+
+      svg {
+        color: white;
+      }
+    }
+  }
+}

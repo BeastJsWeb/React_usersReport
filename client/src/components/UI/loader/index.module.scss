@@ -1,0 +1,25 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color:rgba(159, 163, 185, 0.5);
+  z-index: 1;
+
+  svg {
+    width: calc((1vh + 1vw) / 0.5);
+    height: calc((1vh + 1vw) / 0.5);
+    animation:spin 1s linear infinite;
+  }
+}
+
+@keyframes spin { 
+  100% { 
+    transform:rotate(360deg); 
+  } 
+}

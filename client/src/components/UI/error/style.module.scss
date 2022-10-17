@@ -1,0 +1,25 @@
+.error {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  bottom: 1em;
+  left: 0;
+  padding: 1em 2em;
+  background-color:bisque;
+  border-radius: 0 5em 5em 0;
+  box-shadow: 5px 5px 50px rgb(240, 233, 233, 0.5);
+
+  svg {
+    animation: pulsar 3s linear infinite;
+  }
+}
+
+@keyframes pulsar { 
+  0% {
+    opacity: 0;
+  }
+  30% { 
+    opacity: 1; 
+  } 
+}

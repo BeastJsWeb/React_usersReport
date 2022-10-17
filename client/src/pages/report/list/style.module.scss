@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5em;
+  width: 100%;
+
+  p {
+    margin: auto;
+  }
+}

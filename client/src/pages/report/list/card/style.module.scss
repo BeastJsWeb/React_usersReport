@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% / 3) - (2rem / 3));
+  height: calc(11vh + 11vw);
+  border-radius: 1.4em;
+  box-shadow: 5px 5px 50px rgb(240, 233, 233, 0.5);
+  padding: 1.5em;
+  gap: 2.5em;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 5px 5px 30px #b54ccf33;
+    cursor: pointer;
+  }
+
+  >:nth-child(1) {
+    font-weight: 700;
+    font-size: larger;
+  }
+  .card_body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    >:nth-child(1), >:nth-child(2) {
+      color: #868B8F;
+      display: flex;
+      align-items: center;
+      gap: 6%;
+    }
+    >:nth-child(1) {
+      font-size: calc((1vh + 1vw) / 1.6);
+
+      svg {
+        margin-left: -0.2vw;
+      }
+    }
+    >:nth-child(2) {
+      font-size: smaller;
+    }
+  }
+}
