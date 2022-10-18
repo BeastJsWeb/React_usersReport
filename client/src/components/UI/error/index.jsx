@@ -4,7 +4,7 @@ import {BiError} from '../../../assets/icons/index'
 export const Error = ({children}) => {
   return (
     <div className={cl.error} >
-      <BiError size='2em' />
+      <BiError />
       {children}
     </div>
   )

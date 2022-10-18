@@ -4,7 +4,7 @@ import cl from './index.module.scss'
 export const Loader = () => {
   return (
     <div className={cl.loader}>
-      <AiOutlineLoading3Quarters size='4em' />
+      <AiOutlineLoading3Quarters />
     </div>
   )
 }

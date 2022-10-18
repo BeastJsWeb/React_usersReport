@@ -4,13 +4,11 @@ import {DebounceInput} from 'react-debounce-input'
 import {MdSearch} from '../../../assets/icons/index'
 import cl from './style.module.scss'
 
-export const Search = ({OnSubmit, loading, ...props}) => {
+export const Search = ({OnSubmit, ...props}) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    if (!loading) {
-      OnSubmit && OnSubmit()
-    }
+    OnSubmit && OnSubmit()
   }
  
   return (
@@ -26,7 +24,7 @@ export const Search = ({OnSubmit, loading, ...props}) => {
         debounceTimeout={500}
       />
       <button type='submit' >
-        <MdSearch size={35} />
+        <MdSearch />
       </button>
     </form>
   )

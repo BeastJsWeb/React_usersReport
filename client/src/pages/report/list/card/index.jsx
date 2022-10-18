@@ -24,11 +24,11 @@ export const Card = ({user}) => {
         <div>{user.name}</div>
         <ul className={cl.card_body}>
           <li>
-            <GiSmartphone size={25} />
+            <GiSmartphone />
             {user.phone}
           </li>
           <li>
-            <MdOutlineEmail size={25} />
+            <MdOutlineEmail />
             <a 
               href="*"
               onClick={handleStopChanging}

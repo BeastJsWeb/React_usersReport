@@ -20,7 +20,7 @@ export const Modal = ({children}) => {
         onClick={handleStop}
       >
         <button onClick={handleUseModal} >
-          <IoIosClose size='2.5em' />
+          <IoIosClose />
         </button>
         {children}
       </div>
