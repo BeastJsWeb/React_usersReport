@@ -4,11 +4,11 @@ import {DebounceInput} from 'react-debounce-input'
 import {MdSearch} from '../../../assets/icons/index'
 import cl from './style.module.scss'
 
-export const Search = ({OnSubmit, ...props}) => {
+export const Search = ({onSubmit, ...props}) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    OnSubmit && OnSubmit()
+    onSubmit && onSubmit()
   }
  
   return (

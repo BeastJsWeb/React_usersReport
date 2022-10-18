@@ -9,7 +9,7 @@ import { useInput } from "../../hooks/useInput"
 import userService from "../../API"
 
 export const Report = () => {
-  const [fetchUsers, state] = useFetching( async () => await userService.getAll())
+  const [fetchUsers, state] = useFetching(async () => await userService.getAll())
 
   useEffect(() => { fetchUsers() }, [])
 
@@ -26,7 +26,7 @@ export const Report = () => {
       }
       <Search
         {...searchInput}
-        OnSubmit={!queryState.loading ? handleSubmitQuery : null}
+        onSubmit={!queryState.loading ? handleSubmitQuery : null}
       />
       { state.users?.length
         ? <List currnetUsers={currnetUsers} />
